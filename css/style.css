@@ -3266,17 +3266,29 @@ input[type="button"].btn-block {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    
+    .navbar-brand img {
+      max-height: 50px; /* Ajuste conforme necessário */
+      width: auto;
+      vertical-align: middle; /* Alinha a imagem verticalmente com o texto */
+      transform: translateY(-5px); /* Ajuste o valor para mover a imagem para cima ou para baixo */
+    }
 
-.navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap; }
+    .navbar-brand {
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+      color: #721545 !important; /* Cor atualizada com !important */
+  }
+  
   .navbar-brand:hover, .navbar-brand:focus {
-    text-decoration: none; }
+      text-decoration: none;
+      color: #721545 !important; /* Cor mantida no hover e foco com !important */
+  }
 
 .navbar-nav {
   display: -webkit-box;
@@ -7614,22 +7626,29 @@ h1, h2, h3, h4, h5,
   font-size: 13px; }
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
-  .btn.btn-primary {
-    background: #d291bc;
-    border: 1px solid #d291bc !important;
-    color: #fff; }
-    .btn.btn-primary:hover {
-      border: 1px solid #d291bc;
+    .btn.btn-primary {
+      background: #721545; /* Cor de fundo atualizada */
+      border: 1px solid #721545 !important; /* Cor da borda atualizada */
+      color: #fff; /* Cor do texto mantida */
+  }
+  
+  .btn.btn-primary:hover {
+      border: 1px solid #721545;
       background: transparent !important;
-      color: #d291bc; }
-    .btn.btn-primary.btn-outline-primary {
-      border: 1px solid #d291bc;
+      color: #721545; /* Cor do texto no hover */
+  }
+  
+  .btn.btn-primary.btn-outline-primary {
+      border: 1px solid #721545;
       background: transparent;
-      color: #d291bc; }
-      .btn.btn-primary.btn-outline-primary:hover {
-        border: 1px solid transparent;
-        background: #d291bc;
-        color: #fff; }
+      color: #721545; /* Cor do texto */
+  }
+  
+  .btn.btn-primary.btn-outline-primary:hover {
+      border: 1px solid transparent;
+      background: #721545; /* Fundo no hover */
+      color: #fff; /* Cor do texto no hover */
+  }
   .btn.btn-white {
     background: #fff;
     border: 1px solid #fff;
