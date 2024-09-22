@@ -8510,6 +8510,8 @@ textarea.form-control {
     .block-21 .text .meta > div a {
       color: gray; }
 
+      z
+
 .custom-pagination {
   width: 100%;
   text-align: center;
@@ -8791,6 +8793,41 @@ textarea.form-control {
   -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
+
+  #sobre-mim {
+    position: relative;
+    padding-top: 120px;
+    background-color: #fff;
+    
+}
+
+#sobre-mim .container {
+    min-height: 60vh;
+}
+
+#sobre-mim h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#sobre-mim h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#sobre-mim ul {
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 0;
+}
+
+#sobre-mim ul li {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
 
 @-webkit-keyframes loader-rotate {
   100% {
