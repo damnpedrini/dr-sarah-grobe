@@ -452,65 +452,33 @@ h1, h2, h3, h4, h5,
 
 //BUTTON
 .btn {
-	cursor: pointer;
-	@include border-radius(2px);
-	box-shadow: none!important;
-	font-size: 13px;
-	&:hover, &:active, &:focus {
-		outline: none;
-	}
-	&.btn-primary {
-		background: lighten($primary,0);
-		border: 1px solid $primary !important;
-		color: $white;
-		&:hover {
-			border: 1px solid $primary;
-			background: transparent !important;
-			color :$primary;
-		}
-		&.btn-outline-primary {
-			border: 1px solid $primary;
-			background: transparent;
-			color :$primary;
-			&:hover {
-				border: 1px solid transparent;
-				background: $primary;
-				color :$white;
-			}
-		}
-	}
-	&.btn-white {
-		background: $white;
-		border: 1px solid $white;
-		color: $black;
-		&:hover {
-			border: 1px solid $black;
-			background: $black;
-			color :$white;
-		}
-		&.btn-outline-white {
-			border-color: rgba($white, .8);
-			background: none;
-			border-width: 1px;
-			color: $white;
-			&:hover, &:focus, &:active {
-				background: $primary;
-				border-color: $primary;
-				color: $black;
-			}
-		}
-	}
-	&.btn-outline-black {
-		border-color: rgba($black, 1);
-		background: none;
-		border-width: 1px;
-		color: $black;
-		&:hover, &:focus, &:active {
-			background: $black;
-			border-color: $black;
-			color: $white;
-		}
-	}
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    border-radius: 30px; /* Torna os botões arredondados */
+    box-shadow: none !important;
+    font-family: "Work Sans", Arial, sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    padding: 1rem 1.5rem !important; /* Usar o mesmo padding */
+    font-size: 13px; 
+    background: #721545; /* Cor de fundo */
+    border: 1px solid #721545 !important; /* Borda */
+    color: #fff; /* Cor do texto */
+
+    &:hover, &:active, &:focus {
+        outline: none;
+    }
+
+    &.btn-primary {
+        /* Se necessário, adicione propriedades específicas para o botão primário aqui */
+        // background: $primary; // Defina a cor primária se você estiver usando variáveis
+    }
 }
 
 
